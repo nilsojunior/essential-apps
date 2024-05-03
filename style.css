@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/INTER-EXTRABOLD.TTF);
+}
+body {
+  font-family: Inter, Arial;
+  color: #ffffff;
+  background-color: #141313;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #1d1d1d;
+  border: 1px solid #000000;
+  line-height: 0;
+  padding: 10px;
+  line-height: 25px;
+}
+#searchDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    float: inline-end;
+    margin: 5px;
+  }
+}
+.search-bar {
+  margin: 25px;
+  margin-right: 3px;
+  padding: 14px;
+  background-color: #1d1d1d;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  width: 400px;
+  color: #ffffff;
+}
+input::placeholder {
+  font-family: Inter, Arial;
+}
+input[type="text"] {
+  font-family: Inter, Arial;
+}
+@media only screen and (max-width: 470px) {
+  .search-bar {
+    width: 50%;
+  }
+}
+#apps {
+  td {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    img {
+      width: 27px;
+      height: auto;
+      border: 1px solid black;
+      border-radius: 5px;
+      float: inline-start;
+      margin-right: 3px;
+    }
+    p {
+      float: inline-end;
+    }
+  }
+}
