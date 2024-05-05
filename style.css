@@ -9,6 +9,8 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 header {
   background-color: #1d1d1d;
@@ -17,16 +19,7 @@ header {
   padding: 10px;
   line-height: 25px;
 }
-#searchDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  i {
-    float: inline-end;
-    margin: 5px;
-  }
-}
-.search-bar {
+#input {
   margin: 25px;
   margin-right: 3px;
   padding: 14px;
@@ -47,21 +40,36 @@ input[type="text"] {
     width: 50%;
   }
 }
-#apps {
-  td {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    img {
-      width: 27px;
-      height: auto;
-      border: 1px solid black;
-      border-radius: 5px;
-      float: inline-start;
-      margin-right: 3px;
-    }
-    p {
-      float: inline-end;
-    }
-  }
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15px;
+}
+.app img {
+  width: 30px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+.app a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.text-shadow {
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+#app-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
 }

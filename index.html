@@ -3,58 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Essential Apps</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
     <header>
       <h1>Essential Apps</h1>
-      <p>For new Pc's or recently formatted</p>
+      <p>For new PCs or recently formatted</p>
     </header>
-    <div id="searchDiv">
-      <input class="search-bar" type="text" placeholder="Search..." />
-      <i class="fa fa-search" style="font-size: 28px"></i>
+    <div class="search-bar">
+      <input
+        id="input"
+        class="text-shadow"
+        type="text"
+        placeholder="Search..."
+        onkeyup="searchApp()"
+      />
     </div>
-    <table id="apps">
-      <tr>
-        <td>
-          <a href="https://discord.com/download" target="_blank">
-            <img src="images/discord.png" alt="Discord image" />
-          </a>
-          <p>Discord</p>
-        </td>
-        <td>
-          <a href="https://store.steampowered.com/about/" target="_blank"
-            ><img src="images/steam.png" alt="Steam image"
-          /></a>
-          <p>Steam</p>
-        </td>
-        <td>
-          <a
-            href="https://www.spotify.com/br-pt/download/windows/"
-            target="_blank"
-          >
-            <img src="images/spotify.png" alt="Spotify image" />
-          </a>
-          <p>Spotify</p>
-        </td>
-        <td>
-          <a href="https://download.battle.net/pt-br/desktop" target="_blank">
-            <img src="images/battlenet.png" alt="Battle.net image" />
-          </a>
-          <p>Battle.net</p>
-        </td>
-        <td>
-          <a href="https://www.nvidia.com/pt-br/software/nvidia-app/" target="_blank">
-            <img src="images/nvidiaapp.png" alt="NVIDIA image" />
-          </a>
-          <p>NVIDIA App</p>
-        </td>
-      </tr>
-    </table>
+    <div class="container">
+      <ul id="app-list">
+        <li>
+          <div class="app">
+            <a href="https://discord.com/download" target="_blank">
+              <img src="images/discord.png" alt="Discord image" />
+              Discord
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="app">
+            <a
+              href="https://www.spotify.com/br-pt/download/windows/"
+              target="_blank"
+            >
+              <img src="images/spotify.png" alt="Spotify image" />
+              Spotify
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="app">
+            <a href="https://store.steampowered.com/about/" target="_blank">
+              <img src="images/steam.png" alt="Steam image" />
+              Steam
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="app">
+            <a href="https://download.battle.net/pt-br/desktop" target="_blank">
+              <img src="images/battlenet.png" alt="Battle.net image" />
+              Battle.net
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="app">
+            <a
+              href="https://www.nvidia.com/pt-br/software/nvidia-app/"
+              target="_blank"
+            >
+              <img src="images/nvidiaapp.png" alt="NVIDIA App image" />
+              NVIDIA App
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="app">
+            <a href="https://code.visualstudio.com/" target="_blank">
+              <img src="images/vscode.png" alt="VScode App image" />
+              VScode
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="functions.js"></script>
   </body>
 </html>
